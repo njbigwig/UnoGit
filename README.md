@@ -9,7 +9,7 @@ The Sketch will be used to determine the Time-to-Logo for a Microsoft Surface PC
 ![Image of Boot Logo](/images/SurfaceBootLogo.png)
 
 * Control PC connects to Uno R3 board via USB-A and allows for commands to be sent (BAUD 57600)
-* Light sensor (photodiode) is placed on the target unit display screen where the logo will appear
+* Light sensor (photoresistor) is placed on the target unit display screen where the logo will appear
 * Relay controls a solenoid to tuurn the target unit on
 * LCD display provides timing info
 
@@ -24,14 +24,20 @@ The Sketch will be used to determine the Time-to-Logo for a Microsoft Surface PC
 
 
 
-![Image of Photodiode](/images/Photodiode.png)
+![Image of Photoresistor](/images/Photodiode.png)
+
+Photodetector circuit:
+
+![Image of Photodetector detector](/images/photodetectorcircuit.png)
 
 
 ![Image of LCD](/images/LCD.png)
 
 Note: There is a white backlight on the right side of the LCD which will turn on when the LCD is initialized
+
+LCD contrast circuit:
   
-  
+![Image of LCD contrast control](/images/lcdcontrastcircuit.png)
   
     
 Make sure that the Arduino IDE Serial Monitor window has the following settings:
